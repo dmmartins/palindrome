@@ -22,6 +22,13 @@ def numero_de_palindromes(palavra):
     return len(palindromes)
 
 if __name__ == '__main__':
-    import sys
-    print numero_de_palindromes(sys.argv[1])
+    teste = 1
+    tamanho = int(raw_input())
+
+    while tamanho:
+        palavra = raw_input()
+        print 'Teste', teste
+        print numero_de_palindromes(palavra), '\n'
+        tamanho = int(raw_input())
+        teste += 1
 
